@@ -1,59 +1,69 @@
 
-.navbar{
-    justify-items: center;
-}
 
+.encabezado{
 
-.navbar li {
-    display: inline-block;
-    margin-right: 5px;
-    nav ul li a {
-        text-decoration: none;
-        font-size: 1.2rem;
-        color: rgb(19, 18, 18);
-        font-family: "letra";
-        border: 1px solid rgb(7, 6, 6);
-        gap: 15px;
-        text-decoration: underline;
-        background-image: linear-gradient($color-quinto, $color-terciario);
-        animation-name: mianimacion;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-    
-    
+    .img1{
+        width: 1850px;
+        height: 700px;
     }
-    .bg-propio{
-        background-image: linear-gradient($color-quinto, $color-terciario);
-        position: fixed;
-        flex-direction: column;
-    }
-    
-
-
-    
-    nav-item a {
-        color: white!important;
-    }
-    
-    .nav-item a:hover{
-        color: var(white)!important;
-    }
-    
-    
-    
     .navbar{
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(3, 30px);
+        justify-items: center;
+    }
+    
+    
+    .navbar li {
+        display: inline-block;
+        margin-right: 5px;
+        nav ul li a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: $color-quinto;
+            font-family: "letra";
+            border: 1px solid $color-quinto;
+            gap: 15px;
+            text-decoration: underline;
+            background-image: linear-gradient($color-quinto, $color-terciario);
+            animation-name: mianimacion;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        
+        
+        }
+
+        @keyframes mianimacion{
+            0%{ background: $color-primario;left: 0;top: 0px;}
+            25%{background: $color-secundario;left: 300px;top: 0px;}
+            50%{background: $color-terciario;left: 300px;top: 300px;}
+            75% { background: $color-cuarto;}
+            100%{ background: $color-primario;}
+        }
+
+
+        .bg-propio{
+            background-image: linear-gradient($color-quinto, $color-terciario);
+            position: fixed;
+            flex-direction: column;
+        }
+        
+    
+    
+        
+        nav-item a {
+            color: white!important;
+        }
+        
+        .nav-item a:hover{
+            color: var(white)!important;
+        }
+        
+        
+        
+        .navbar{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, 30px);
+        }
+        
     }
     
 }
-
-@keyframes mianimacion{
-    0%{ background: $color-primario;left: 0;top: 0px;}
-    25%{background: $color-secundario;left: 300px;top: 0px;}
-    50%{background: $color-terciario;left: 300px;top: 300px;}
-    75% { background: $color-cuarto;}
-    100%{ background: $color-primario;}
-}
-

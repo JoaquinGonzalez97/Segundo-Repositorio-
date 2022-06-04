@@ -1,10 +1,14 @@
 .container_grid{
-    background-image: linear-gradient(orange,black);
+    background-image: linear-gradient($color-cuarto,$color-quinto);
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     column-gap: 10px;
     row-gap: 10px;
     padding: 20px;
+    .container_grid{
+        color: $color-sexto;
+      }
+      
     .container_grid{
 
       
@@ -16,7 +20,7 @@
       
       
       .img2{
-          height: 500px;
+          height: 900px;
           width: 1000px;
       }
       

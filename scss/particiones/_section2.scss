@@ -10,18 +10,18 @@
     .section2 h3{
         
         text-transform: uppercase;
-        color: rgb(241, 233, 233);
+        color: $color-sexto;
         
     
     }
     
     .section2{
-        background-image: linear-gradient(black, red);
+        background-image: linear-gradient($color-quinto, $color-primario);
         .texto{
             position: absolute;
             left: 50%;
             top: 180%;
-            color: white;
+            color: $color-sexto;
             text-transform: uppercase;
             font: 'arial';
         
@@ -29,13 +29,13 @@
         
         .texto1{
         text-transform: uppercase;
-        color: white;
+        color: $color-sexto;
         
         }
         
         
         .bg-propio{
-            background-image: linear-gradient(black, orange);
+            background-image: linear-gradient($color-quinto, $color-cuarto);
             position: fixed;
             flex-direction: column;
         }

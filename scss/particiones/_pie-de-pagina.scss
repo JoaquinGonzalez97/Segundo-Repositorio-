@@ -1,5 +1,5 @@
 .pie-de-pagina{
-    background-image: linear-gradient(red,orange);
+    background-image: linear-gradient($color-primario,$color-cuarto);
     display: grid;
     grid-template-columns: repeat(2, 5fr);
     column-gap: 10px;
