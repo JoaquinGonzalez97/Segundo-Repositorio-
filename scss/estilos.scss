@@ -1,0 +1,36 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "letra";
+    src: url(../fonts/DanburySmall_PERSONAL_USE_ONLY.otf);
+}
+
+@import"./particiones/variables";
+@import"./particiones/header";
+@import"./particiones/section";
+@import"./particiones/section2";
+@import"./particiones/pie-de-pagina";
+
+
+
+
+$breakpoints: (
+    sm : 540px,
+    md : 768px,
+    lg : 1024px,
+);
+
+@mixin media-up($breakpoint) {
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+    
+}
+
+

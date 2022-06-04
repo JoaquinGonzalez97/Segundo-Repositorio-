@@ -1,0 +1,28 @@
+.container_grid{
+    background-image: linear-gradient(orange,black);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 20px;
+    .container_grid{
+
+      
+       .img1{
+          height: 800px;
+          width: 2050px; 
+         
+       }   
+      
+      
+      .img2{
+          height: 500px;
+          width: 1000px;
+      }
+      
+      
+      .img3{
+          width: 1000px;
+      }
+    }
+}

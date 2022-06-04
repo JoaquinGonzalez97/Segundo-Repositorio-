@@ -1,0 +1,23 @@
+.pie-de-pagina{
+    background-image: linear-gradient(red,orange);
+    display: grid;
+    grid-template-columns: repeat(2, 5fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 20px;
+    .pie-de-pagina h4{
+        font-size: 1.3rem;
+        grid-area: contactos;
+    }
+    
+    .pie-de-pagina h2{
+        grid-area: copy;
+    }
+    
+    .imgf{
+        display: flex;
+        height: 100px;
+        width: 100px;
+    }
+    
+}

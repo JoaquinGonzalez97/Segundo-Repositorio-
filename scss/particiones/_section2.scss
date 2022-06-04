@@ -1,0 +1,44 @@
+.seccion2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .contenedor1 img{
+        width: 50%;
+        height: 50%;
+    }
+    
+    .section2 h3{
+        
+        text-transform: uppercase;
+        color: rgb(241, 233, 233);
+        
+    
+    }
+    
+    .section2{
+        background-image: linear-gradient(black, red);
+        .texto{
+            position: absolute;
+            left: 50%;
+            top: 180%;
+            color: white;
+            text-transform: uppercase;
+            font: 'arial';
+        
+        }
+        
+        .texto1{
+        text-transform: uppercase;
+        color: white;
+        
+        }
+        
+        
+        .bg-propio{
+            background-image: linear-gradient(black, orange);
+            position: fixed;
+            flex-direction: column;
+        }
+    }
+}
+
