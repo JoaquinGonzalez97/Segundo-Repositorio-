@@ -1,10 +1,14 @@
 .seccion2{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    text-align: end;
 
     .contenedor1 img{
         width: 50%;
         height: 50%;
+    }
+    .img4{
+        width: 1000;
     }
     
     .section2 h3{
@@ -16,7 +20,7 @@
     }
     
     .section2{
-        background-image: linear-gradient($color-quinto, $color-primario);
+      
         .texto{
             position: absolute;
             left: 50%;

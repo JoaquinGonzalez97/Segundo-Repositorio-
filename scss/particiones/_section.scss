@@ -1,32 +1,33 @@
 .container_grid{
-    background-image: linear-gradient($color-cuarto,$color-quinto);
+   
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    column-gap: 10px;
+    column-gap: 100px;
     row-gap: 10px;
     padding: 20px;
+    background-image: linear-gradient($color-quinto,$color-sexto);
     .container_grid{
         color: $color-sexto;
       }
       
-    .container_grid{
 
-      
+    .container_grid{
        .img1{
           height: 800px;
-          width: 2050px; 
+          width: 500px; 
+
+          }
          
        }   
       
       
       .img2{
-          height: 900px;
+          height: 500px;
           width: 1000px;
+          justify-items: end;
       }
-      
       
       .img3{
           width: 1000px;
       }
-    }
+
 }

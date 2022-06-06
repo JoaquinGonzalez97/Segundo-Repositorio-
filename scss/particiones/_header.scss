@@ -2,9 +2,13 @@
 
 .encabezado{
 
+
+    background-image: linear-gradient($color-sexto,$color-quinto);
     .img1{
-        width: 1850px;
+        width: 2000px;
         height: 700px;
+        margin: 20px;
+        
     }
     .navbar{
         justify-items: center;

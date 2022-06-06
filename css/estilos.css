@@ -1,3 +1,4 @@
+@import url(../fonts/DanburySmall_PERSONAL_USE_ONLY.otf);
 * {
   margin: 0;
   padding: 0;
@@ -7,28 +8,29 @@
   font-family: "letra";
   src: url(../fonts/DanburySmall_PERSONAL_USE_ONLY.otf); }
 
-.encabezado .img1 {
-  width: 1850px;
-  height: 700px; }
-
-.encabezado .navbar {
-  justify-items: center; }
-
-.encabezado .navbar li {
-  display: inline-block;
-  margin-right: 5px; }
-  .encabezado .navbar li nav ul li a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: #000000;
-    font-family: "letra";
-    border: 1px solid #000000;
-    gap: 15px;
-    text-decoration: underline;
-    background-image: linear-gradient(#000000, #FFFF00);
-    animation-name: mianimacion;
-    animation-duration: 5s;
-    animation-iteration-count: infinite; }
+.encabezado {
+  background-image: linear-gradient(#FFFFFF, #000000); }
+  .encabezado .img1 {
+    width: 2000px;
+    height: 700px;
+    margin: 20px; }
+  .encabezado .navbar {
+    justify-items: center; }
+  .encabezado .navbar li {
+    display: inline-block;
+    margin-right: 5px; }
+    .encabezado .navbar li nav ul li a {
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: #000000;
+      font-family: "letra";
+      border: 1px solid #000000;
+      gap: 15px;
+      text-decoration: underline;
+      background-image: linear-gradient(#000000, #FFFF00);
+      animation-name: mianimacion;
+      animation-duration: 5s;
+      animation-iteration-count: infinite; }
 
 @keyframes mianimacion {
   0% {
@@ -47,62 +49,63 @@
     background: #FFA500; }
   100% {
     background: #FF0000; } }
-  .encabezado .navbar li .bg-propio {
-    background-image: linear-gradient(#000000, #FFFF00);
-    position: fixed;
-    flex-direction: column; }
-  .encabezado .navbar li nav-item a {
-    color: white !important; }
-  .encabezado .navbar li .nav-item a:hover {
-    color: var(white) !important; }
-  .encabezado .navbar li .navbar {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 30px); }
+    .encabezado .navbar li .bg-propio {
+      background-image: linear-gradient(#000000, #FFFF00);
+      position: fixed;
+      flex-direction: column; }
+    .encabezado .navbar li nav-item a {
+      color: white !important; }
+    .encabezado .navbar li .nav-item a:hover {
+      color: var(white) !important; }
+    .encabezado .navbar li .navbar {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(3, 30px); }
 
 .container_grid {
-  background-image: linear-gradient(#FFA500, #000000);
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  column-gap: 10px;
+  column-gap: 100px;
   row-gap: 10px;
-  padding: 20px; }
+  padding: 20px;
+  background-image: linear-gradient(#000000, #FFFFFF); }
   .container_grid .container_grid {
     color: #FFFFFF; }
   .container_grid .container_grid .img1 {
     height: 800px;
-    width: 2050px; }
-  .container_grid .container_grid .img2 {
-    height: 900px;
-    width: 1000px; }
-  .container_grid .container_grid .img3 {
+    width: 500px; }
+  .container_grid .img2 {
+    height: 500px;
+    width: 1000px;
+    justify-items: end; }
+  .container_grid .img3 {
     width: 1000px; }
 
 .seccion2 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; }
+  padding: 20px;
+  text-align: end; }
   .seccion2 .contenedor1 img {
     width: 50%;
     height: 50%; }
+  .seccion2 .img4 {
+    width: 1000; }
   .seccion2 .section2 h3 {
     text-transform: uppercase;
     color: #FFFFFF; }
-  .seccion2 .section2 {
-    background-image: linear-gradient(#000000, #FF0000); }
-    .seccion2 .section2 .texto {
-      position: absolute;
-      left: 50%;
-      top: 180%;
-      color: #FFFFFF;
-      text-transform: uppercase;
-      font: 'arial'; }
-    .seccion2 .section2 .texto1 {
-      text-transform: uppercase;
-      color: #FFFFFF; }
-    .seccion2 .section2 .bg-propio {
-      background-image: linear-gradient(#000000, #FFA500);
-      position: fixed;
-      flex-direction: column; }
+  .seccion2 .section2 .texto {
+    position: absolute;
+    left: 50%;
+    top: 180%;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font: 'arial'; }
+  .seccion2 .section2 .texto1 {
+    text-transform: uppercase;
+    color: #FFFFFF; }
+  .seccion2 .section2 .bg-propio {
+    background-image: linear-gradient(#000000, #FFA500);
+    position: fixed;
+    flex-direction: column; }
 
 .pie-de-pagina {
   background-image: linear-gradient(#FF0000, #FFA500);

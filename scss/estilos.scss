@@ -10,7 +10,7 @@
     font-family: "letra";
     src: url(../fonts/DanburySmall_PERSONAL_USE_ONLY.otf);
 }
-
+@import url(../fonts/DanburySmall_PERSONAL_USE_ONLY.otf);
 @import"./particiones/variables";
 @import"./particiones/header";
 @import"./particiones/section";
@@ -20,17 +20,23 @@
 
 
 
-$breakpoints: (
-    sm : 540px,
-    md : 768px,
-    lg : 1024px,
-);
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+ }
+ 
 
-@mixin media-up($breakpoint) {
-    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
-        @content;
-    }
-    
-}
+ $breakpoints: (
+     sm : 540px,
+     md : 768px,
+     lg : 1024px,
+ );
+
+ @mixin media-up ($breakpoint) {
+     @media screen and (min-width: map-get ($breakpoints, $breakpoint)){
+          @content;
+     }
+ }
+ 
 
 
