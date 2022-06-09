@@ -1,8 +1,8 @@
 .seccion2{
+    text-decoration: underline;
     display: grid;
     padding: 20px;
-    text-align: end;
-
+    
     .contenedor1 img{
         width: 50%;
         height: 50%;
@@ -16,13 +16,15 @@
         text-transform: uppercase;
         color: $color-sexto;
         
+        
     
     }
     
     .section2{
       
         .texto{
-            position: absolute;
+            text-align: end;
+            justify-content: end;
             left: 50%;
             top: 180%;
             color: $color-sexto;

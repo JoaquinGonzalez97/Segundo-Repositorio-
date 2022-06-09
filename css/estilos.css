@@ -75,15 +75,14 @@
     width: 500px; }
   .container_grid .img2 {
     height: 500px;
-    width: 1000px;
-    justify-items: end; }
+    width: 1000px; }
   .container_grid .img3 {
     width: 1000px; }
 
 .seccion2 {
+  text-decoration: underline;
   display: grid;
-  padding: 20px;
-  text-align: end; }
+  padding: 20px; }
   .seccion2 .contenedor1 img {
     width: 50%;
     height: 50%; }
@@ -93,7 +92,8 @@
     text-transform: uppercase;
     color: #FFFFFF; }
   .seccion2 .section2 .texto {
-    position: absolute;
+    text-align: end;
+    justify-content: end;
     left: 50%;
     top: 180%;
     color: #FFFFFF;
@@ -123,3 +123,23 @@
     display: flex;
     height: 100px;
     width: 100px; }
+
+header {
+  width: 100%; }
+  @media screen and (max-width: 480px) {
+    header {
+      width: 100%; } }
+  @media screen and (max-width: 480px) {
+    header {
+      width: 100%; } }
+  header img1 {
+    width: 25%; }
+
+section {
+  width: 100%; }
+  @media screen and (max-width: 768px) {
+    section {
+      width: 100%; } }
+  @media screen and (max-width: 480px) {
+    section {
+      width: 100%; } }

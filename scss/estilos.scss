@@ -20,23 +20,28 @@
 
 
 
-@mixin sizes($width, $height) {
-    height: $height;
-    width: $width;
- }
- 
 
  $breakpoints: (
-     sm : 540px,
+     sm : 480px,
      md : 768px,
      lg : 1024px,
  );
 
- @mixin media-up ($breakpoint) {
-     @media screen and (min-width: map-get($breakpoints, $breakpoint)){
+ @mixin mv ($medida : 480px) {
+     @media screen and (max-width: $medida) {
           @content;
      }
  }
- 
 
+header{
+    width:100%;
+    @include mv (480px) {width: 100%}
+    @include mv {width:100%}
+    img1 {width: 25%;}
+}
+section{
+    width:100%;
+    @include mv (768px) {width: 100%}
+    @include mv {width:100%}
+}
 
