@@ -3,11 +3,16 @@
 .encabezado{
 
 
-    background-image: linear-gradient($color-sexto,$color-quinto);
+    background-image: linear-gradient($color-sexto,$color-sexto);
     .img1{
-        width: 2000px;
+        justify-items: center;
+        align-items: center;
+        width: 900px;
         height: 700px;
         margin: 20px;
+        transform: translate(50%,0%);
+        
+        
         
     }
     .navbar{
@@ -22,6 +27,7 @@
             text-decoration: none;
             font-size: 1.2rem;
             color: $color-quinto;
+            text-decoration: underline;
             font-family: "letra";
             border: 1px solid $color-quinto;
             gap: 15px;
@@ -69,5 +75,6 @@
         }
         
     }
+    
     
 }

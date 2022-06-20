@@ -1,36 +1,29 @@
-.container_grid{
-     
+
+
+.section{
+    background-image: linear-gradient($color-sexto, $color-quinto);
     display: grid;
-    column-gap: 100px;
-    row-gap: 10px;
+    
+   
     padding: 20px;
-    background-image: linear-gradient($color-quinto,$color-sexto);
     .container_grid{
         color: $color-sexto;
       }
       
-
-    .container_grid{
-       .img1{
-          height: 800px;
-          width: 500px; 
-
-          }
-         
-       }   
-      
-      .img2{
-          height: 500px;
-          width: 1000px;
-          
+      .p1{
+          color: $color-sexto;
+          transform: translate(70%, 0%);
       }
-      
-      .img3{
-          width: 1000px;
-          
-      }
+    } 
 
-     
+  .img1{
+    width: 500px;
+    height: 600px;
+  }
      
 
+.bg-propio2{
+    width: 100%;
+    height: 100%;
+    
 }

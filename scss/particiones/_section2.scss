@@ -1,50 +1,15 @@
 .seccion2{
-    text-decoration: underline;
-    display: grid;
+    background-image: linear-gradient($color-quinto,$color-primario);
+
     padding: 20px;
     
-    .contenedor1 img{
-        width: 50%;
-        height: 50%;
-    }
-    .img4{
-        width: 1000;
-    }
-    
-    .section2 h3{
-        
-        text-transform: uppercase;
-        color: $color-sexto;
-        
-        
-    
-    }
-    
-    .section2{
-      
-        .texto{
-            text-align: end;
-            justify-content: end;
-            left: 50%;
-            top: 180%;
-            color: $color-sexto;
-            text-transform: uppercase;
-            font: 'arial';
-        
-        }
-        
-        .texto1{
-        text-transform: uppercase;
-        color: $color-sexto;
-        
-        }
-        
-        
+
         .bg-propio{
-            background-image: linear-gradient($color-quinto, $color-cuarto);
-            position: fixed;
-            flex-direction: column;
+            
+            width: 500px;
+            height: 500px;
+            margin: 10px;
         }
-    }
+    
 }
 

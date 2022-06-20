@@ -37,7 +37,7 @@ header{
     width:100%;
     @include mv (480px) {width: 100%}
     @include mv {width:100%}
-    img1 {width: 25%;}
+    .img1 {width: 100%;}
 }
 section{
     width:100%;
