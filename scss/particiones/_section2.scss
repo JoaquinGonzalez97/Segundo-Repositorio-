@@ -1,15 +1,24 @@
-.seccion2{
-    background-image: linear-gradient($color-quinto,$color-primario);
+.section2{
 
-    padding: 20px;
+    background-image: linear-gradient($color-sexto,  );
+    .lista{
+        display: flex;
+        font-size: 100%;
+        color: $color-quinto;
+        align-items: center;
+        justify-content: center;
+        
+    }
     
-
-        .bg-propio{
-            
-            width: 500px;
-            height: 500px;
-            margin: 10px;
-        }
     
-}
-
+    .lista ul li a{
+       
+        
+        text-transform: uppercase;
+        width: 80%;
+        height: 20%;
+        text-decoration: underline;
+        background-color: $color-sexto;
+        
+    }    
+}  

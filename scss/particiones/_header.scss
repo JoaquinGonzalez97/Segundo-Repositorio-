@@ -1,80 +1,119 @@
 
+header{
+    width: 100%;
+    height: 80px;
+    margin-top: 40px;
+    z-index: 1;
+    padding: 40px;
+    background-color: $color-cuarto;
+    font-family: "letra1";
+}
 
-.encabezado{
 
 
-    background-image: linear-gradient($color-sexto,$color-sexto);
-    .img1{
-        justify-items: center;
+.container__menu{
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+.logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 60px;
+
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li{
+    list-style: none;
+    margin-left: 3%;
+}
+
+.menu ul li a{
+    color: $color-sexto;
+    text-decoration: none;
+    font-size: 16px;
+    background-image: linear-gradient($color-cuarto, $color-quinto);
+    text-transform: uppercase;
+}
+
+#selected{
+    background: $color-quinto;
+    padding: 10px 40px;
+    border-radius: 50px;
+}
+
+.menu nav img{
+    display: none;
+}
+
+.menu #btn_menu{
+    display: none;
+}
+
+}
+
+
+
+/*COVER*/
+
+
+.container__cover{
+    width: -10%;
+    height: 0%;
+    margin-top: 10%;
+    background-image: linear-gradient($color-sexto, $color-primario);
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 10px;
+     
+    .cover{
+        max-width:90%;
+        height: 100%;
+        margin: auto;
+        display: flex;
         align-items: center;
-        width: 900px;
-        height: 700px;
-        margin: 20px;
-        transform: translate(50%,0%);
-        
-        
-        
-    }
-    .navbar{
-        justify-items: center;
+        justify-content: space-between;
     }
     
-    
-    .navbar li {
-        display: inline-block;
-        margin-right: 5px;
-        nav ul li a {
-            text-decoration: none;
-            font-size: 1.2rem;
-            color: $color-quinto;
-            text-decoration: underline;
-            font-family: "letra";
-            border: 1px solid $color-quinto;
-            gap: 15px;
-            text-decoration: underline;
-            background-image: linear-gradient($color-quinto, $color-terciario);
-            animation-name: mianimacion;
-            animation-duration: 5s;
-            animation-iteration-count: infinite;
-        
-        
-        }
-
-        @keyframes mianimacion{
-            0%{ background: $color-primario;left: 0;top: 0px;}
-            25%{background: $color-secundario;left: 300px;top: 0px;}
-            50%{background: $color-terciario;left: 300px;top: 300px;}
-            75% { background: $color-cuarto;}
-            100%{ background: $color-primario;}
-        }
-
-
-        .bg-propio{
-            background-image: linear-gradient($color-quinto, $color-terciario);
-            position: fixed;
-            flex-direction: column;
-        }
-        
-    
-    
-        
-        nav-item a {
-            color: white!important;
-        }
-        
-        .nav-item a:hover{
-            color: var(white)!important;
-        }
-        
-        
-        
-        .navbar{
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: repeat(3, 30px);
-        }
-        
+    .container__cover .text{
+        max-width: 400px;
     }
     
+    .container__cover .text h1{
+        font-size: 36px;
+        font-weight: 600px;
+    }
+    
+    .container__cover .text p{
+        font-size: 18px;
+        margin-top: 40px;
+    }
+    
+    .container__cover .text input{
+        padding: 18px 80px;
+        border: none;
+        font-size: 16px;
+        border-radius: 50px;
+        margin-top: 40px;
+        background: linear-gradient(to right, $color-cuarto, $color-quinto);
+        color: rgb(212, 25, 25);
+        cursor: pointer;
+        box-shadow: 1px 1px 30px -12px #f54d4d;
+        transition: all 300ms;
+    }
     
 }
