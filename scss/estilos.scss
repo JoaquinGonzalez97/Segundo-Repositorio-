@@ -21,6 +21,27 @@
 @import"./particiones/pie-de-pagina";
 
 
+
+
+/* The animation code */
+@keyframes example {
+  0%   { left:0px; top:0px;}
+  25%  { left:45px; top:0px;}
+  50%  { left:45px; top:45px;}
+  75%  { left:0px; top:45px;}
+  100% { left:0px; top:0px;}
+}
+
+/* The element to apply the animation to */
+.container__menu {
+  width: 50px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+
+
 .contenedor{
     background-image: linear-gradient($color-sexto, $color-primario)
     
@@ -52,6 +73,7 @@ img{
 }
 
 
+
 /* formulario*/
 
 body{
@@ -74,7 +96,7 @@ body{
   
   
   input{
-    background-color: #fbfbfb; 
+    background-color: $color-sexto; 
     width: 408px; 
     height: 40px; 
     border-radius: 5px;  
@@ -88,7 +110,7 @@ body{
   
   
   textarea{
-    background-color: #fbfbfb; 
+    background-color: $color-sexto; 
     width: 405px; 
     height: 150px; 
     border-radius: 5px;  
@@ -125,7 +147,7 @@ body{
   
   
   button p{
-    color: #fff; 
+    color: $color-sexto; 
   }
   
   
@@ -136,7 +158,7 @@ body{
   
   .aviso{
     font-size: 13px;  
-    color: #0e0e0e;  
+    color: $color-quinto;  
   }
   
   
@@ -151,13 +173,13 @@ body{
   h3{
     font-size: 16px; 
     padding-bottom: 30px;
-    color: #0e0e0e;   
+    color: $color-quinto;   
   }
   
   
   p{
     font-size: 20px; 
-    color: #0e0e0e; 
+    color: $color-quinto; 
   }
   
   
@@ -173,13 +195,13 @@ body{
   
   .formulario input:focus{
     outline:0;
-    border: 1px solid #97d848;
+    border: 1px solid;
   }
   
   
   .formulario textarea:focus{
     outline:0;
-    border: 1px solid #97d848;
+    border: 1px solid;
   }
 
 
@@ -188,6 +210,92 @@ body{
  /* responsive*/
 
   
+ @media screen and (max-width:1200px){
 
+  header{
+      padding: 40px;
+  }
+
+}
+
+@media screen and (max-width: 720px){
+
+  .menu nav{
+      
+      
+     
+      margin-right: 10%; 
+      width: 20px;
+      height: 100px;
+      
+      
+      
+  }
+
+  .menu ul{
+      flex-direction: row;
+      margin-top: 20px;
+  }
+
+  .menu ul li{
+      margin-top: 20px;
+      margin-left: 5px;
+  }
+
+  .menu ul li a{
+      color: #bebebe;
+  }
+
+  #selected{
+      background: none;
+      padding: 0px;
+      border-radius: none;
+      color: #F6615D;
+  }
+
+  .menu nav img{
+      display: block;
+      width: 20%;
+  }
+
+  #back_menu{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0,0,0,0.5);
+      display: none;
+  }
+
+  .menu #btn_menu{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background: rgba(255, 255, 255, 0.1);
+      font-size: 24px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 300ms;
+  }
+
+  .menu #btn_menu:hover{
+      background: rgba(255, 255, 255, 0.2);
+  }
+
+  
+
+/* The animation code */
+@keyframes example {
+  0%   { left:0px; top:0px;}
+  25%  { right:45px; top:0px;}
+  50%  { right:45px; top:30px;}
+  75%  { left:0px; top:30px;}
+  100% { left:0px; top:0px;}
+}
+
+}
 
   

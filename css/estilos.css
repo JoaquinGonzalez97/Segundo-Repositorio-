@@ -21,7 +21,7 @@ header {
   max-width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-between; }
+  justify-content: baseline; }
   .container__menu .logo {
     height: 100%;
     display: flex;
@@ -35,8 +35,10 @@ header {
     display: flex; }
   .container__menu .menu ul li {
     list-style: none;
-    margin-left: 3%; }
+    margin-right: 5%; }
   .container__menu .menu ul li a {
+    display: flex;
+    flex-direction: row;
     color: #FFFFFF;
     text-decoration: none;
     font-size: 16px;
@@ -128,6 +130,31 @@ header {
   .pie-de-pagina .bg-propio3 {
     transform: translate(-70%, 0%); }
 
+/* The animation code */
+@keyframes example {
+  0% {
+    left: 0px;
+    top: 0px; }
+  25% {
+    left: 45px;
+    top: 0px; }
+  50% {
+    left: 45px;
+    top: 45px; }
+  75% {
+    left: 0px;
+    top: 45px; }
+  100% {
+    left: 0px;
+    top: 0px; } }
+
+/* The element to apply the animation to */
+.container__menu {
+  width: 50px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s; }
+
 .contenedor {
   background-image: linear-gradient(#FFFFFF, #FF0000); }
 
@@ -165,7 +192,7 @@ body {
   padding-left: 30px; }
 
 input {
-  background-color: #fbfbfb;
+  background-color: #FFFFFF;
   width: 408px;
   height: 40px;
   border-radius: 5px;
@@ -177,7 +204,7 @@ input {
   margin-bottom: 20px; }
 
 textarea {
-  background-color: #fbfbfb;
+  background-color: #FFFFFF;
   width: 405px;
   height: 150px;
   border-radius: 5px;
@@ -208,14 +235,14 @@ button {
   cursor: pointer; }
 
 button p {
-  color: #fff; }
+  color: #FFFFFF; }
 
 span {
   color: #FFA500; }
 
 .aviso {
   font-size: 13px;
-  color: #0e0e0e; }
+  color: #000000; }
 
 h1 {
   font-size: 39px;
@@ -226,11 +253,11 @@ h1 {
 h3 {
   font-size: 16px;
   padding-bottom: 30px;
-  color: #0e0e0e; }
+  color: #000000; }
 
 p {
   font-size: 20px;
-  color: #0e0e0e; }
+  color: #000000; }
 
 ::-webkit-input-placeholder {
   color: #a8a8a8; }
@@ -240,10 +267,73 @@ p {
 
 .formulario input:focus {
   outline: 0;
-  border: 1px solid #97d848; }
+  border: 1px solid; }
 
 .formulario textarea:focus {
   outline: 0;
-  border: 1px solid #97d848; }
+  border: 1px solid; }
 
 /* responsive*/
+@media screen and (max-width: 1200px) {
+  header {
+    padding: 40px; } }
+
+@media screen and (max-width: 720px) {
+  .menu nav {
+    margin-right: 10%;
+    width: 20px;
+    height: 100px; }
+  .menu ul {
+    flex-direction: row;
+    margin-top: 20px; }
+  .menu ul li {
+    margin-top: 20px;
+    margin-left: 5px; }
+  .menu ul li a {
+    color: #bebebe; }
+  #selected {
+    background: none;
+    padding: 0px;
+    border-radius: none;
+    color: #F6615D; }
+  .menu nav img {
+    display: block;
+    width: 20%; }
+  #back_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: none; }
+  .menu #btn_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 24px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 300ms; }
+  .menu #btn_menu:hover {
+    background: rgba(255, 255, 255, 0.2); }
+  /* The animation code */
+  @keyframes example {
+    0% {
+      left: 0px;
+      top: 0px; }
+    25% {
+      right: 45px;
+      top: 0px; }
+    50% {
+      right: 45px;
+      top: 30px; }
+    75% {
+      left: 0px;
+      top: 30px; }
+    100% {
+      left: 0px;
+      top: 0px; } } }
