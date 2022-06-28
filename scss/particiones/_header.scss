@@ -4,7 +4,7 @@ header{
     height: 80px;
     margin-top: 40px;
     z-index: 1;
-    padding: 40px;
+    padding: 10px;
     background-color: $color-cuarto;
     font-family: "letra1";
 }
@@ -17,16 +17,7 @@ header{
     display: flex;
     justify-content:baseline;
     
-.logo{
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
 
-.logo img{
-    width: 60px;
-
-}
 
 .menu{
     display: flex;
@@ -49,7 +40,7 @@ header{
     text-decoration: none;
     font-size: 16px;
     background-image: linear-gradient($color-cuarto, $color-quinto);
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 #selected{
@@ -105,17 +96,6 @@ header{
         margin-top: 40px;
     }
     
-    .container__cover .text input{
-        padding: 18px 80px;
-        border: none;
-        font-size: 16px;
-        border-radius: 50px;
-        margin-top: 40px;
-        background: linear-gradient(to right, $color-cuarto, $color-quinto);
-        color: rgb(212, 25, 25);
-        cursor: pointer;
-        box-shadow: 1px 1px 30px -12px #f54d4d;
-        transition: all 300ms;
-    }
+   
     
 }

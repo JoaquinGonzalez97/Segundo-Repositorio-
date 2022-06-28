@@ -136,7 +136,7 @@ body{
     padding-right: 5px;   
     margin-bottom: 20px; 
     margin-top: 10px;   
-    text-transform: uppercase;
+    text-transform: none;
     background-color: $color-cuarto; 
     border-color: $color-primario; 
     border-style: solid; 
@@ -243,14 +243,14 @@ body{
   }
 
   .menu ul li a{
-      color: #bebebe;
+      color: $color-sexto;
   }
 
   #selected{
       background: none;
       padding: 0px;
       border-radius: none;
-      color: #F6615D;
+      color: $color-primario;
   }
 
   .menu nav img{
@@ -264,7 +264,7 @@ body{
       left: 0;
       width: 100%;
       height: 100vh;
-      background: rgba(0,0,0,0.5);
+      background: $color-quinto;
       display: none;
   }
 
@@ -281,10 +281,7 @@ body{
       transition: all 300ms;
   }
 
-  .menu #btn_menu:hover{
-      background: rgba(255, 255, 255, 0.2);
-  }
-
+  
   
 
 /* The animation code */
@@ -299,3 +296,69 @@ body{
 }
 
   
+
+@media screen and (max-width: 480px){
+  .menu nav{
+      
+      
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     
+     
+     height: 100px;
+    
+    
+    
+}
+
+.menu ul{
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.menu ul li{
+   margin-right: 40px;
+    
+}
+
+.menu ul li a{
+    color: $color-sexto;
+}
+
+#selected{
+    background: none;
+    padding: 0px;
+    border-radius: none;
+    color: $color-primario;
+}
+
+.menu nav img{
+    display: block;
+    width: 10%;
+}
+
+#back_menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: $color-quinto;
+    display: none;
+}
+
+
+
+
+
+
+/* The animation code */
+@keyframes example {
+0%   { left:0px; top:0px;}
+25%  { right:45px; top:0px;}
+50%  { right:45px; top:30px;}
+75%  { left:0px; top:30px;}
+100% { left:0px; top:0px;}
+}
+}

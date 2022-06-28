@@ -13,7 +13,7 @@ header {
   height: 80px;
   margin-top: 40px;
   z-index: 1;
-  padding: 40px;
+  padding: 10px;
   background-color: #FFA500;
   font-family: "letra1"; }
 
@@ -22,12 +22,6 @@ header {
   height: 100%;
   display: flex;
   justify-content: baseline; }
-  .container__menu .logo {
-    height: 100%;
-    display: flex;
-    align-items: center; }
-  .container__menu .logo img {
-    width: 60px; }
   .container__menu .menu {
     display: flex;
     align-items: center; }
@@ -43,7 +37,7 @@ header {
     text-decoration: none;
     font-size: 16px;
     background-image: linear-gradient(#FFA500, #000000);
-    text-transform: uppercase; }
+    text-transform: none; }
   .container__menu #selected {
     background: #000000;
     padding: 10px 40px;
@@ -77,17 +71,6 @@ header {
   .container__cover .container__cover .text p {
     font-size: 18px;
     margin-top: 40px; }
-  .container__cover .container__cover .text input {
-    padding: 18px 80px;
-    border: none;
-    font-size: 16px;
-    border-radius: 50px;
-    margin-top: 40px;
-    background: linear-gradient(to right, #FFA500, #000000);
-    color: #d41919;
-    cursor: pointer;
-    box-shadow: 1px 1px 30px -12px #f54d4d;
-    transition: all 300ms; }
 
 .section {
   background-image: linear-gradient(#FF0000, #FFFFFF);
@@ -226,7 +209,7 @@ button {
   padding-right: 5px;
   margin-bottom: 20px;
   margin-top: 10px;
-  text-transform: uppercase;
+  text-transform: none;
   background-color: #FFA500;
   border-color: #FF0000;
   border-style: solid;
@@ -290,12 +273,12 @@ p {
     margin-top: 20px;
     margin-left: 5px; }
   .menu ul li a {
-    color: #bebebe; }
+    color: #FFFFFF; }
   #selected {
     background: none;
     padding: 0px;
     border-radius: none;
-    color: #F6615D; }
+    color: #FF0000; }
   .menu nav img {
     display: block;
     width: 20%; }
@@ -305,7 +288,7 @@ p {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
+    background: #000000;
     display: none; }
   .menu #btn_menu {
     display: flex;
@@ -318,8 +301,53 @@ p {
     border-radius: 50px;
     cursor: pointer;
     transition: all 300ms; }
-  .menu #btn_menu:hover {
-    background: rgba(255, 255, 255, 0.2); }
+  /* The animation code */
+  @keyframes example {
+    0% {
+      left: 0px;
+      top: 0px; }
+    25% {
+      right: 45px;
+      top: 0px; }
+    50% {
+      right: 45px;
+      top: 30px; }
+    75% {
+      left: 0px;
+      top: 30px; }
+    100% {
+      left: 0px;
+      top: 0px; } } }
+
+@media screen and (max-width: 480px) {
+  .menu nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100px; }
+  .menu ul {
+    flex-direction: row;
+    margin-top: 10px; }
+  .menu ul li {
+    margin-right: 40px; }
+  .menu ul li a {
+    color: #FFFFFF; }
+  #selected {
+    background: none;
+    padding: 0px;
+    border-radius: none;
+    color: #FF0000; }
+  .menu nav img {
+    display: block;
+    width: 10%; }
+  #back_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    display: none; }
   /* The animation code */
   @keyframes example {
     0% {
