@@ -97,7 +97,7 @@ body{
   
   input{
     background-color: $color-sexto; 
-    width: 360px; 
+    width: 80%; 
     height: 40px; 
     border-radius: 5px;  
     border-style: solid; 
@@ -111,7 +111,7 @@ body{
   
   textarea{
     background-color: $color-sexto; 
-    width: 360px; 
+    width: 80%; 
     height: 150px; 
     border-radius: 5px;  
     border-style: solid; 
@@ -141,7 +141,7 @@ body{
     border-color: $color-primario; 
     border-style: solid; 
     border-radius: 10px;  
-    width: 420px;   
+    width: 80%;   
     cursor: pointer;
   }
   
@@ -364,6 +364,202 @@ body{
 
 
 
+@media screen and (max-width: 480px){
+  .menu nav{
+      
+      
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     height: 100px;
+    
+    
+    
+}
+
+.menu ul{
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.menu ul li{
+   margin-right: 40px;
+    
+}
+
+.menu ul li a{
+    color: $color-sexto;
+}
+
+#selected{
+    background: none;
+    padding: 0px;
+    border-radius: none;
+    color: $color-primario;
+}
+
+.menu nav img{
+    display: block;
+    width: 10%;
+}
+
+#back_menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: $color-quinto;
+    display: none;
+}
+
+
+
+
+
+
+/* The animation code */
+@keyframes example {
+0%   { left:0px; top:0px;}
+25%  { right:45px; top:0px;}
+50%  { right:45px; top:30px;}
+75%  { left:0px; top:30px;}
+100% { left:0px; top:0px;}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 380px){
+
+
+  .header{
+    width: 380px;
+  }
+
+.container__menu{
+  width: 380px;
+}
+
+  .menu nav{
+      
+      
+    display: flex;
+    flex-direction: column;
+    align-content: baseline;
+    height: 100px;
+    margin-right: 30px;
+   
+   
+   
+}
+
+
+.contenedor{
+  width: 380px;
+}
+.container__cover{
+  width: 380px;
+}
+
+.text{
+  width: 300px;
+}
+
+.h1{
+  width: 100px;
+  font-size: 10px;
+}
+.menu ul{
+   flex-direction: row;
+   margin-top: 10px;
+}
+
+.menu ul li{
+  margin-right: 5px;
+  
+   
+}
+
+.menu ul li a{
+   color: $color-sexto;
+}
+
+#selected{
+   background: none;
+   padding: 0px;
+   border-radius: none;
+   color: $color-primario;
+}
+
+.menu nav img{
+   display: block;
+   width: 1%;
+}
+
+
+.contact_form{
+  width: 300px
+}
+.textarea{
+  width: 10px;
+}
+.label{
+  width: 20%;
+}
+.input{
+  width: 50px;
+}
+
+
+.section{
+  width: 380px;
+}
+.h1{
+  width: 70px;
+}
+
+.text1{
+  width: 80px;
+}
+
+.pie-de-pagina{
+  width: 380px;
+}
+
+
+.row{
+  width: 380px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 320px){
 
 
@@ -447,9 +643,6 @@ body{
   width: 300%;
 }
 
-.section2{
-  background-image: linear-gradient($color-primario, $color-cuarto);
-}
 }
 
 
