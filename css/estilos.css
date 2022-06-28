@@ -367,21 +367,27 @@ p {
       left: 0px;
       top: 0px; } } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
+  .header {
+    width: 100px; }
   .menu nav {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    height: 100px; }
+    align-content: baseline;
+    height: 100px;
+    margin-right: 20px; }
   .container__cover {
     width: 400px; }
-  .text1 {
-    width: 300px; }
+  .text {
+    width: 200px; }
+  .h1 {
+    width: 100px;
+    font-size: 10px; }
   .menu ul {
     flex-direction: row;
     margin-top: 10px; }
   .menu ul li {
-    margin-right: 20px; }
+    margin-right: 10px; }
   .menu ul li a {
     color: #FFFFFF; }
   #selected {
@@ -392,40 +398,37 @@ p {
   .menu nav img {
     display: block;
     width: 10%; }
-  #back_menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: #000000;
-    display: none; }
-  /* The animation code */
-  @keyframes example {
-    0% {
-      left: 0px;
-      top: 0px; }
-    25% {
-      right: 45px;
-      top: 0px; }
-    50% {
-      right: 45px;
-      top: 30px; }
-    75% {
-      left: 0px;
-      top: 30px; }
-    100% {
-      left: 0px;
-      top: 0px; } }
   .contact_form {
-    width: 400px; }
+    width: 50px; }
   .textarea {
     width: 400px; }
   .label {
-    width: 400px; }
+    width: 200px; }
   .input {
-    width: 400px; }
+    width: 200px; }
   .section {
     width: 400px; }
   .h1 {
-    width: 300px; } }
+    width: 100px; }
+  .pie-de-pagina {
+    width: 300%; }
+  .section2 {
+    background-image: linear-gradient(#FF0000, #FFA500); } }
+
+/* The animation code */
+@keyframes example {
+  0% {
+    left: 0px;
+    top: 0px; }
+  25% {
+    right: 45px;
+    top: 0px; }
+  50% {
+    right: 45px;
+    top: 30px; }
+  75% {
+    left: 0px;
+    top: 30px; }
+  100% {
+    left: 0px;
+    top: 0px; } }
