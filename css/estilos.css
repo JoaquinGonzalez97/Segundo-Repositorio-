@@ -139,7 +139,8 @@ header {
   animation-duration: 4s; }
 
 .contenedor {
-  background-image: linear-gradient(#FFFFFF, #FF0000); }
+  background-image: linear-gradient(#FFFFFF, #FF0000);
+  margin-top: 10px; }
 
 img {
   width: 100%;
@@ -148,7 +149,7 @@ img {
 .row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 5px; }
+  padding: 10px; }
 
 .row {
   margin-top: 10%; }
@@ -176,7 +177,7 @@ body {
 
 input {
   background-color: #FFFFFF;
-  width: 408px;
+  width: 360px;
   height: 40px;
   border-radius: 5px;
   border-style: solid;
@@ -188,7 +189,7 @@ input {
 
 textarea {
   background-color: #FFFFFF;
-  width: 405px;
+  width: 360px;
   height: 150px;
   border-radius: 5px;
   border-style: solid;
@@ -365,3 +366,66 @@ p {
     100% {
       left: 0px;
       top: 0px; } } }
+
+@media screen and (max-width: 400px) {
+  .menu nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100px; }
+  .container__cover {
+    width: 400px; }
+  .text1 {
+    width: 300px; }
+  .menu ul {
+    flex-direction: row;
+    margin-top: 10px; }
+  .menu ul li {
+    margin-right: 20px; }
+  .menu ul li a {
+    color: #FFFFFF; }
+  #selected {
+    background: none;
+    padding: 0px;
+    border-radius: none;
+    color: #FF0000; }
+  .menu nav img {
+    display: block;
+    width: 10%; }
+  #back_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    display: none; }
+  /* The animation code */
+  @keyframes example {
+    0% {
+      left: 0px;
+      top: 0px; }
+    25% {
+      right: 45px;
+      top: 0px; }
+    50% {
+      right: 45px;
+      top: 30px; }
+    75% {
+      left: 0px;
+      top: 30px; }
+    100% {
+      left: 0px;
+      top: 0px; } }
+  .contact_form {
+    width: 400px; }
+  .textarea {
+    width: 400px; }
+  .label {
+    width: 400px; }
+  .input {
+    width: 400px; }
+  .section {
+    width: 400px; }
+  .h1 {
+    width: 300px; } }
