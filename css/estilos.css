@@ -395,6 +395,14 @@ p {
     height: 100vh;
     background: #000000;
     display: none; }
+  .contact_form {
+    width: 400px; }
+  .textarea {
+    width: 10px; }
+  .label {
+    width: 20%; }
+  .input {
+    width: 50px; }
   /* The animation code */
   @keyframes example {
     0% {
