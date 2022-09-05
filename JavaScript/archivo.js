@@ -1,19 +1,16 @@
-function clickLeerMas(){
-    alert("Siempre estamos para ayudarlo");
+
+let products = [];
+let total = 0;
+
+function add(product, price) {
+    console.log(product, price);
+    products.push(product);
+    total = total + price;
+    document.getElementById("checkout").innerHTML = `Pagar $${total}`
 }
 
-const boton = document.getElementById("botonn");
-
-boton.addEventListener ("click", clickLeerMas);
-
-
-
-const form = document.querySelector("#formulario");
-
-form.addEventListener('submit', enviarFormulario);
-
-const enviarFormulario = (evento) => {
-    alert(evento);
+function pay() {
+    alert(products.join(", \n"));
 }
 
 
