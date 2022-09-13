@@ -19,6 +19,24 @@ let email   =  sessionStorage.getItem('email');
 console.log(typeof email);  
 
 
+
+getElementById("product-form")
+  .addEventListener('submit', function (e) {
+    // Override the default Form behaviour
+    e.preventDefault();
+
+    // Getting Form Values
+    const name = document.getElementById("name").value,
+      telefono = document.getElementById("telefono").value,
+      mail = document.getElementById("mail").value;
+      nota = document.getElementById("nota").value;
+      
+
+    // Create a new Oject Product
+    const product = new Product(name, telefono, mail, nota, );
+
+
+
 fetch(url)
     .then( response => response.json() )
     .then( data => mostrarData(data) )
